@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(4, 4, 4);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 10vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: .3;
+
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+}
+
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 100px 50px;
+    height: 50vh;
+
+}
+
+#home::before {
+    content: "";
+    background-image: url('/img/grocies.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 70vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: .89;
+
+}
+
+#home p {
+
+    color: rgb(7, 7, 7);
+    font-size: 1.5rem;
+    max-width: 25em;
+}
+
+
+.btn {
+    padding: 6px 20px;
+    /* border: 2px solid white;
+    background-color: brown; */
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #159529;
+    background-color: #2bbb1fde;
+}
+/* OUR FEATURES */
+#features{
+display: flex;
+max-width: 70vw;
+margin: auto;
+flex-direction: column;
+padding-top: 10rem;
+}
+.features .boxcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.features .boxcontainer .box{
+    border: 2px solid orange;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 34px;
+    margin: auto;
+    /* border-radius: 28px; */
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+/* 
+.features .box-container .box{
+    flex:1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: .5rem;
+  }
+  .speciality .box-container .box .image{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: absolute;
+    top:-100%; left:0;
+  }
+  
+  .speciality .box-container .box .content{
+    text-align: center;
+    background:#fff;
+    padding:2rem;
+  } */
+/* utility class */
+
+.h-primary {
+    font-size: 3rem;
+    color: #666;
+}
+.h-secondary{
+    align-items: center;
+}
+.heading{
+    text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: #666;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
